@@ -7,15 +7,6 @@
           <div class="post-lists-body">
             <div class="post-list-item" v-for="article in item.list" :key="article.createdAt">
               <div class="post-list-item-container show">
-                <div>
-                  {{
-                  article.categories
-                  .map((cat) => {
-                  return cat.title;
-                  })
-                  .join("|")
-                  }}
-                </div>
                 <div class="item-label bg-postcolor">
                   <div class="item-title pl-4">
                     <router-link

@@ -1,46 +1,39 @@
 <template>
   <header class="head nav d-flex jc-around ai-center" :class="isScrolling ? `mini` : ''">
-    <div class="hand">
-    </div>
     <div class="d-flex text-white hand">
-      <router-link
-        exact
-        tag="div"
-        :to="item.link"
-        v-for="item in items"
-        :key="item.text"
-        active-class="active"
-        class="nav-item px-5 icon"
-      >{{ item.text }}</router-link>
+      <router-link exact
+                   tag="div"
+                   :to="item.link"
+                   v-for="item in items"
+                   :key="item.text"
+                   active-class="active"
+                   class="nav-item px-5 icon">{{ item.text }}
+      </router-link>
       <div class="play pl-5">
-        <i
-          v-show="!isPlay"
-          active-class="active"
-          class="iconfont icon-music-o nav-item"
-          @click="playMusic(true)"
-        ></i>
-        <i
-          v-show="isPlay"
-          active-class="active"
-          class="iconfont icon-Pause1 nav-item"
-          @click="playMusic(false)"
-        ></i>
+        <i v-show="!isPlay"
+           active-class="active"
+           class="iconfont icon-music-o nav-item"
+           @click="playMusic(true)">
+        </i>
+        <i v-show="isPlay"
+           active-class="active"
+           class="iconfont icon-Pause1 nav-item"
+           @click="playMusic(false)">
+        </i>
       </div>
       <div v-show="isPlay">
-        <audio
-        autoplay="autoplay"
-          id="music"
-          ref="music"
-          src="../assets/images/bg.mp3"
-          loop
-        ></audio>
+        <audio autoplay="autoplay"
+               id="music"
+               ref="music"
+               src="../assets/images/bg.mp3"
+               loop>
+        </audio>
       </div>
       <el-dropdown trigger="click" @visible-change="(v) => (isShowMenu = v)">
         <div
           class="menu-button hand"
           @click="isShowMenu = !isShowMenu"
-          :class="{ isShowMenu: isShowMenu }"
-        >
+          :class="{ isShowMenu: isShowMenu }">
           <i></i>
           <i></i>
           <i></i>
