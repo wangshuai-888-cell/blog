@@ -44,10 +44,6 @@
       </div>
     </div>
     <div class="art-comment" v-if="model">
-      <div class="text-grey border-top">
-        <p>• 非特殊说明，本博所有文章均为博主原创。</p>
-        <p>• 本博客所有文章均采用 CC BY-SA 3.0协议 。转载请注明出处！</p>
-      </div>
       <h3 class="fs-xxxxl mt-9">评论</h3>
       <comment-textarea
         class="textarea-box bg-postcolor bdr"

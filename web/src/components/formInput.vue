@@ -6,7 +6,7 @@
           size="medium"
           :maxlength="10"
           v-model="userForm.nickName"
-          :placeholder="isUpload ? '网站名称' : '起个牛B点的昵称吧～'"
+          :placeholder="isUpload ? '网站名称' : '起个好听的昵称吧～'"
         ></el-input>
       </el-form-item>
       <el-form-item prop="email" v-if="isUpload">
@@ -20,7 +20,7 @@
         <el-input
           size="medium"
           v-model="userForm.qqEmail"
-          placeholder="QQ邮箱(仅为了获取QQ头像)"
+          placeholder="QQ邮箱"
         ></el-input>
       </el-form-item>
       <el-form-item prop="url">
@@ -51,7 +51,7 @@
             v-if="userForm.avatarImg"
             :src="userForm.avatarImg"
             class="logo-img"
-            alt="miqilin头像缩略图"
+            alt="xiaoshuai头像缩略图"
           />
           <i v-else class="el-icon-plus avatar-uploader-icon"></i>
         </el-upload>

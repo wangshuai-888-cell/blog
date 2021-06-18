@@ -12,7 +12,7 @@
     >
       <div class="d-flex">
         <div class="avatar-one text-left">
-          <img :src="item.avatarImg" alt="miqilin头像" width="50" height="50" />
+          <img :src="item.avatarImg" alt="xiaoshuai头像" width="50" height="50" />
         </div>
         <div class="flex-1 fs-lg">
           <div class="d-flex ai-center">
@@ -37,7 +37,7 @@
                 <div class="mini-avatar text-left">
                   <img
                     :src="c.avatarImg"
-                    alt="miqilin头像"
+                    alt="xiaoshuai头像"
                     width="30"
                     height="30"
                   />

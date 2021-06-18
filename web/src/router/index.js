@@ -12,7 +12,7 @@ const routes = [{
       name: 'Home',
       component: () => import( /* webpackChunkName: "home" */ '../views/Home.vue'),
       meta: {
-        title: '首页 - MIQILIN'
+        title: '首页 - xiaoshuai'
       }
     },
     {
@@ -20,7 +20,7 @@ const routes = [{
       name: 'Archive',
       component: () => import( /* webpackChunkName: "archive" */ '../views/Archive.vue'),
       meta: {
-        title: '归档 - MIQILIN'
+        title: '归档 - xiaoshuai'
       }
     },
     {
@@ -28,7 +28,7 @@ const routes = [{
       name: 'Tag',
       component: () => import( /* webpackChunkName: "tag" */ '../views/Tag.vue'),
       meta: {
-        title: '标签 - MIQILIN'
+        title: '标签 - xiaoshuai'
       }
     },
     {
@@ -36,7 +36,7 @@ const routes = [{
       name: 'Link',
       component: () => import( /* webpackChunkName: "link" */ '../views/Link.vue'),
       meta: {
-        title: '友链 - MIQILIN'
+        title: '友链 - xiaoshuai'
       }
     },
     {
@@ -44,7 +44,7 @@ const routes = [{
       name: 'Message',
       component: () => import( /* webpackChunkName: "message" */ '../views/Message.vue'),
       meta: {
-        title: '留言 - MIQILIN'
+        title: '留言 - xiaoshuai'
       }
     },
     {
@@ -52,7 +52,7 @@ const routes = [{
       name: 'About',
       component: () => import( /* webpackChunkName: "about" */ '../views/About.vue'),
       meta: {
-        title: '关于 - MIQILIN'
+        title: '关于 - xiaoshuai'
       }
     },
     {
@@ -61,7 +61,7 @@ const routes = [{
       component: () => import( /* webpackChunkName: "article" */ '../views/Article.vue'),
       props: true,
       meta: {
-        title: '文章详情 - MIQILIN'
+        title: '文章详情 - xiaoshuai'
       }
     }
   ]

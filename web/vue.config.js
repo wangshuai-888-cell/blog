@@ -6,6 +6,11 @@ const productionGzipExtensions = ["js", "css"];
 // const PrerenderSPAPlugin = require('prerender-spa-plugin')
 // const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 module.exports = {
+  devServer:{
+    disableHostCheck: true,
+    port:80, // 启动端口
+    open:true,  // 启动后是否自动打开网页
+},
   lintOnSave: false,
   outputDir: __dirname + "/../server/web",
   // publicPath: process.env.NODE_ENV === 'production' ? '/web' : '/'

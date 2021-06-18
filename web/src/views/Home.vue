@@ -2,10 +2,6 @@
   <div class="mb-9">
     <div class="mb-7">
       <div class="bgImg d-flex jc-center" id="header">
-        <div class="text-white d-flex jc-center ai-center">
-          <span class="shouye-text">亲亲这边建议您要多喝热水哦</span>
-          <span class="line-down pl-3">_</span>
-        </div>
         <div class="arrow-down">
           <i class="iconfont icon-down" @click="downPage"></i>
         </div>
@@ -17,7 +13,7 @@
           <router-link
             tag="div"
             :to="`/article/list/${article._id}`"
-            class="top mt-10 mx-8 mb-0 hand"
+            class=" mt-10 mx-8 mb-0 hand"
             :style="{ 'background-image': `url(${article.icon})` }"
           ></router-link>
           <div class="bg-postcolor pt-8 mx-8 title">
@@ -137,7 +133,7 @@ export default {
 
 <style lang="scss" scoped>
 .bgImg {
-  background-image: url(https://miqilin-blog.oss-cn-shenzhen.aliyuncs.com/bg-blog.png);
+  background-image: url(../assets/images/bg.jpg);
   width: 100%;
   height: 100vh;
   background-position: center;
@@ -210,7 +206,7 @@ export default {
   margin: 0 auto;
   .top {
     width: 270px;
-    height: 250px;
+    // height: 50px;
   }
 }
 @media screen and (max-width: 768px) {

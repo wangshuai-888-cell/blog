@@ -6,7 +6,7 @@
           @click="lookUserInfo"
           v-if="userInfo.avatarImg"
           :src="userInfo.avatarImg"
-          alt="miqilin头像"
+          alt="xiaoshuai头像"
         />
         <i v-else @click="lookUserInfo" class="iconfont icon-touxiang hand"></i>
         <p class="mt-2 avatar text-center fs-lg text-grey-2">
@@ -152,14 +152,14 @@ export default {
       this.messageObj.parent =
         this.type == "children" ? this.parentId : "5ec884e3fe28d35475b43fb3";
       this.messageObj.byAiteName =
-        this.type == "children" ? this.nickName : "miqilin";
+        this.type == "children" ? this.nickName : "xiaoshuai";
       let url = this.model == "comments" ? "/comments" : "/messages";
       await this.$http.post(url, this.messageObj);
       this.$emit("toResponse");
       this.$message.success("发布成功");
 
       this.btnLoading = false;
-      if (this.userInfo.nickName == "miqilin博主") {
+      if (this.userInfo.nickName == "xiaoshuai博主") {
         let byAiteObj = await this.$http.get(`users/${this.byAiteUserId}`);
         let replyObj = {
           recipient: byAiteObj.data.email,

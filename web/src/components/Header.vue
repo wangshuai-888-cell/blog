@@ -1,13 +1,6 @@
 <template>
   <header class="head nav d-flex jc-around ai-center" :class="isScrolling ? `mini` : ''">
     <div class="hand">
-      <router-link tag="div" to="/">
-        <img
-          src="https://miqilin-blog.oss-cn-shenzhen.aliyuncs.com/logo.png"
-          height="42"
-          class="main-img"
-        />
-      </router-link>
     </div>
     <div class="d-flex text-white hand">
       <router-link
@@ -35,9 +28,10 @@
       </div>
       <div v-show="isPlay">
         <audio
+        autoplay="autoplay"
           id="music"
           ref="music"
-          src="https://miqilin-blog.oss-cn-shenzhen.aliyuncs.com/Prospect.mp3"
+          src="../assets/images/bg.mp3"
           loop
         ></audio>
       </div>
