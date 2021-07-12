@@ -6,8 +6,8 @@ export default new Vuex.Store({
   state: {
     map_user_info: {},
     vuex_skin_obj: {
-      name: 'miqilin',
-      chinaName: '米淇淋',
+      name: 'xiaowang',
+      chinaName: '小王',
     },
   },
   mutations: {

@@ -1,6 +1,7 @@
 <template>
   <div class="foot">
     <div class="border-bottom border-top bg-navcolor">
+      <div class="keep-on-record">豫ICP备 2021004617号</div>
       <div class="d-flex py-6 jc-center">
         <div class="px-7 hand">
           <a href="https://github.com/wangshuai-888-cell" target="_blank" class="text-grey-1">GITHUB</a>
@@ -53,5 +54,11 @@ export default {
   width: 100%;
   bottom: 0;
   left: 0;
+
+  .keep-on-record {
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(187, 187, 187);
+  }
 }
 </style>
